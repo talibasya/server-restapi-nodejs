@@ -2,6 +2,8 @@ var mongoose = require('mongoose'),
     assert = require('assert');
 
 var Dishes = require('./models/dishes-3');
+var LeaderShips = require('./models/leaderships');
+var Promotions = require('./models/promotions');
 // Connection URL
 var url = 'mongodb://localhost:27017/conFusion';
 mongoose.connect(url);
@@ -12,6 +14,7 @@ db.once('open', function () {
     // we're connected!
     console.log("Connected correctly to server");
     // create a new dish
+
     Dishes.create({
         name: 'Uthapizza',
         description: 'A unique . . .',
