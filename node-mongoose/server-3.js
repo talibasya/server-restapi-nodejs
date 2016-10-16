@@ -14,7 +14,11 @@ db.once('open', function () {
     // create a new dish
     Dishes.create({
         name: 'Uthapizza',
-        description: 'Test',
+        description: 'A unique . . .',
+        image: 'images/uthapizza.png',
+        category: 'mains',
+        label: 'Hot',
+        price: '4.99',
         comments: [
             {
                 rating: 3,
